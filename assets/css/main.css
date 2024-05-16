@@ -1,0 +1,51 @@
+@import './public.css';
+
+.header{
+    position:sticky;
+    top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+.header .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;;
+}
+.header .logo img{
+    width: 35px;
+}
+.header .logo a{
+    color: var(--mainColor);
+}
+.header .nav a {
+    color: #101928;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.active{
+    font-weight: bold;
+}
+.header .auth a{
+    font-family: var(--subFont);
+}
+.header .auth a:first-of-type{
+    border: 1px solid var(--mainColor);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.header .auth a:last-of-type{
+    background-color: var(--mainColor);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+
+}
+@media (max-width:990px){
+    .nav{
+        display: none;
+    }
+}
